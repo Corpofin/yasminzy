@@ -33,4 +33,8 @@ li {
   min-width: 6rem;
   min-height: 6rem;
 }
+
+img {
+  min-height: 1rem;
+}
 </style>

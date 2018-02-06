@@ -1,61 +1,68 @@
 <template>
 <div class="container-fluid mh-100 py-5">
-  <div class="container">
+  <div class="container d-flex flex-column justify-content-between mh-100">
     <div class="mb-5 text-center">
-      <span class="cursive text-bold text-primary">who i am</span>
+      <span class="cursive font-weight-bold text-primary">who i am</span>
       <h2 class="mb-5">- ABOUT ME -</h2>
 
-      <p class="text-center mx-auto">I'm a Freelance Web Developer based in Indonesia. I build beautiful Web user interfaces, with a focus on responsive design and performance, using the latest front-end design techniques. If you’re looking for someone who will also care about your project - from design and user experience to clean code - then you’re in the right place.</p>
+      <p class="text-center mx-auto">I'm a Freelance Web Developer based in Indonesia. I build beautiful Web user interfaces, with a focus on responsive design and performance, using the latest front-end design techniques. If you’re looking for someone who will also care about your project, then you’re in the right place.</p>
 
-      <p class="cursive mx-auto my-4">Yasmin ZY</p>
+      <p class="cursive mx-auto my-3">Yasmin ZY</p>
 
-      <button type="button" class="btn btn-secondary" v-on:click="$router.push('about')">MY RESUME</button>
-      <button type="button" class="btn btn-primary" v-on:click="$router.push('hire')">HIRE ME</button>
+      <button class="btn btn-light mr-3 rounded-0" type="button" v-on:click="$router.push('resume')">MY RESUME</button>
+      <button class="btn btn-secondary rounded-0" type="button" v-on:click="$router.push('hire')">HIRE ME</button>
     </div>
 
     <div class="row">
       <div class="col-md-6 col-lg-4">
-        <div class="card h-100">
-          <h3 class="card-header h5">EDUCATION &amp; JOB</h3>
+        <div class="border-0 card h-100 mb-4">
+          <h3 class="bg-transparent border-bottom-0 card-header h5">EDUCATION &amp; JOB</h3>
+
           <div class="card-body">
             <small>June 2012 - Aug 2016</small>
-            <h5 class="card-title">Mechanical Engineering</h5>
-            <p class="card-text">Institut Teknologi Kalimantan</p>
+            <h4 class="card-title h6 mb-1 text-primary">Mechanical Engineering</h4>
+            <p class="card-text small text-muted">Institut Teknologi Kalimantan</p>
 
             <small>2016 - now</small>
-            <h5 class="card-title">Freelance Web Developer</h5>
+            <h4 class="card-title h6 mb-1 text-primary">Freelance Web Developer</h4>
           </div>
         </div>
       </div>
 
       <div class="col-lg-4 mt-md-4 mt-lg-0 order-md-last order-lg-0">
-        <div class="card h-100">
-          <h3 class="card-header h5">WHAT I'M DOING</h3>
+       <div class="border-0 card h-100 mb-4">
+          <h3 class="bg-transparent border-bottom-0 card-header h5">WHAT I'M DOING</h3>
+
           <div class="card-body">
-            <p class="card-text">I build Single Page Application - website that feels like an app - and static website. I also offer monthly maintenance service for the websites I developed.</p>
+            <p class="card-text text-muted">I build Single Page Application - website that feels like an app - and static website. I also offer monthly maintenance service for the websites I developed.</p>
 
             <ul class="list-unstyled mb-4 row">
-              <li class="col-sm-6 d-flex align-items-center" v-for="(item, index) in services" v-bind:key="index">
-                <img class="img-responsive mr-3" v-bind:src="'img/svg/' + item.icon + '.svg'" v-bind:alt="item.label">
-                <p class="mb-0">{{ item.label }}<br>
-                <small>{{ item.sublabel }}</small></p>
+              <li class="col-sm-6 mb-3" v-for="(item, index) in services" v-bind:key="index">
+                <router-link class="d-flex align-items-center text-dark" to="services">
+                  <i v-bind:class="'mb-0 mr-3 h5 icon ion-' + item.icon" />
+
+                  <p class="mb-0">{{ item.label }}<br>
+                  <small>{{ item.sublabel }}</small></p>
+                </router-link>
               </li>
             </ul>
-
-            <p class="text-center">
-              <router-link class="btn btn-light btn-sm" to="services">LEARN MORE</router-link>
-              </p>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
-        <div class="card h-100">
-          <h3 class="card-header h5">TECHNICAL SKILLS</h3>
+        <div class="border-0 card h-100 mb-4">
+          <h3 class="bg-transparent border-bottom-0 card-header h5">TECHNICAL SKILLS</h3>
+
           <div class="card-body">
-            <ul class="list-unstyled row">
-              <li class="col-6 mb-1" v-for="(item, index) in skills" v-bind:key="index">
-                {{ item }}
+            <ul class="list-unstyled">
+              <li class="mb-3 row" v-for="(item, index) in skills" v-bind:key="index">
+                <span class="col-sm-4 small">{{ item. label }}</span>
+                <div class="col-sm-8">
+                  <div class="progress">
+                    <div v-bind:class="'progress-bar bg-secondary w-' + item.value" role="progressbar" v-bind:aria-valuenow="item.value" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -72,26 +79,21 @@ export default {
     return {
       services: [
         {
-          icon: "browser",
+          icon: "code",
           label: "Development",
           sublabel: "Website, SPA"
         },
         {
-          icon: "cog",
+          icon: "settings",
           label: "Maintenance",
           sublabel: "Backup, update"
         }
       ],
       skills: [
-        "HTML/CSS",
-        "JavaScript",
-        "Bootstrap",
-        "Sass",
-        "Vue.js",
-        "Quasar",
-        "Git",
-        "PHP",
-        "Grunt"
+        { label: "HTML/CSS", value: 75 },
+        { label: "JavaScript", value: 50 },
+        { label: "Sass", value: 50 },
+        { label: "Vue.js", value: 75 }
       ]
     };
   }

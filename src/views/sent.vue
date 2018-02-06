@@ -1,17 +1,17 @@
 <template>
-<div class="container-fluid py-3">
+<div class="container-fluid py-5">
   <div class="container">
-    <div class="jumbotron">
+    <div class="bg-light jumbotron rounded-0">
       <h1 class="display-4">Message Sent</h1>
 
       <p class="lead">Expect response within 24 hours.</p>
 
       <hr class="my-4">
 
-      <p>Thanks for reaching out. Have a good day 😊</p>
+      <p class="cursive mb-5">Thanks for reaching out. Have a good day 😊</p>
 
       <p class="lead">
-        <router-link class="btn btn-primary btn-lg" to="/" role="button">BACK TO HOME</router-link>
+        <router-link class="btn btn-secondary rounded-0" to="/" role="button">BACK TO HOME</router-link>
       </p>
     </div>
   </div>

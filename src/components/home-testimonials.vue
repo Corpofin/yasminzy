@@ -1,28 +1,43 @@
 <template>
-  <div class="container-fluid py-5 text-center">
-    <div class="container">
-      <span class="cursive text-primary">people say</span>
-      <h2 class="mb-5">- TESTIMONIALS -</h2>
+<div class="container-fluid py-5 text-center">
+  <div class="container">
+    <span class="cursive font-weight-bold text-primary">people say</span>
+    <h2 class="mb-5">- TESTIMONIALS -</h2>
 
-      <div class="carousel slide" data-ride="carousel" v-cloak>
-        <div class="carousel-inner">
-          <div class="carousel-item" v-for="(item, index) in filter(testimonials, 3)" v-bind:key="index">
-            <blockquote class="blockquote">
-              <p>{{ item.content }}</p>
+    <div class="carousel slide" id="controls" data-ride="carousel" v-cloak>
+      <div class="bg-light carousel-inner mx-auto w-75">
+        <div class="carousel-item" v-for="(item, index) in testimonials" v-bind:key="index">
+          <img class="avatar img-responsive my-5 rounded-circle" v-bind:src="'img/testimonials/' + urlize(item.name) + '.jpg'" v-bind:alt="item.name">
 
-              <footer class="blockquote-footer">
-                <cite>{{ item.name }}</cite>
-              </footer>
-            </blockquote>
-          </div>
+          <blockquote class="blockquote mb-5">
+            <p class="font-italic">{{ item.content }}</p>
+
+            <footer class="blockquote-footer mt-5">
+              <cite>
+                {{ item.name }}<br>
+                <small>{{ item.position }}</small>
+              </cite>
+            </footer>
+          </blockquote>
         </div>
       </div>
+
+      <a class="carousel-control-prev" href="#controls" role="button" data-slide="prev">
+        <i class="h3 icon ion-chevron-left text-dark" />
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#controls" role="button" data-slide="next">
+        <i class="h3 icon ion-chevron-right text-dark" />
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
+</div>
 </template>
 
 <script>
-import { filter, urlize } from "@/functions";
+import { urlize } from "@/functions";
 import { testimonials } from "@/data";
 
 export default {
@@ -35,12 +50,26 @@ export default {
     document.querySelector(".carousel-item").className += " active";
   },
   methods: {
-    filter,
     urlize
   }
 };
 </script>
 
 <style scoped>
+.blockquote-footer::before {
+  content: "";
+}
 
+p {
+  font-weight: 100;
+}
+
+cite {
+  font-style: normal;
+}
+
+.avatar {
+  height: 4rem;
+  width: 4rem;
+}
 </style>

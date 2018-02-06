@@ -1,8 +1,7 @@
 const projects = [
   {
     title: "Sample Restaurant",
-    description:
-      "Single Page Application for a restaurant with reservation system.",
+    type: "SPA",
     link: "https://yzy-sample-restaurant.netlify.com"
   }
 ];
@@ -10,6 +9,8 @@ const projects = [
 const posts = [
   {
     title: "",
+    date: "",
+    tag: "",
     description: ""
   }
 ];
@@ -17,8 +18,11 @@ const posts = [
 const testimonials = [
   {
     name: "",
+    position: "",
     content: ""
   }
 ];
 
-export { projects, posts, testimonials };
+const logos = [""];
+
+export { projects, posts, testimonials, logos };

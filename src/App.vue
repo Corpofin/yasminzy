@@ -2,17 +2,21 @@
   <div class="d-flex flex-column mh-100">
     <nav class="animated fadeInDown bg-light fixed-top navbar navbar-expand-lg navbar-light">
       <router-link class="navbar-brand" to="/">
-        <img class="d-inline-block align-top" src="@/assets/logo.png" alt="Logo" width="30" height="30" /> Yasmin ZY
+        <img class="d-inline-block align-top" src="@/assets/logo.png" alt="Logo" width="30" height="30" />
+        <span class="cursive">Yasmin ZY</span>
       </router-link>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="border-0 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto w-auto">
           <li class="nav-item" v-for="(item, index) in menu" v-bind:key="index">
-            <router-link class="nav-link" v-bind:to="to(item)">{{ item.label || item }}</router-link>
+            <router-link class="nav-link" v-bind:to="to(item)">
+              {{ item.label || item }}
+            </router-link>
           </li>
         </ul>
       </div>
@@ -20,15 +24,32 @@
 
     <router-view class="animated fadeIn" />
 
-    <footer class="mt-auto">
-      <div class="bg-dark container-fluid p-3 p-md-5">
-        <ul class="list-unstyled d-flex flex-wrap">
-          <li class="mr-3" v-for="(item, index) in accounts" v-bind:key="index">
-            <a class="text-light" v-bind:href="item.link">{{ item.name }}</a>
-          </li>
-        </ul>
+    <footer class="mt-auto text-center">
+      <div class="bg-dark container-fluid py-5 text-white">
+        <div class="container">
+          <span class="cursive font-weight-bold text-primary">get in touch</span>
+          <h2 class="mb-5">- CONTACT -</h2>
 
-        <small class="text-muted">&copy; 2018 All Rights Reserved</small>
+          <p class="mx-auto">
+            <a class="text-light" href="mailto:yasmin@yasminzy.com">yasmin[at]yasminzy.com</a><br>
+
+            <a class="text-light" href="tel=6285251982080">+62 852 5198 2080</a>
+          </p>
+
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li v-for="(item, index) in accounts" v-bind:key="index">
+              <a class="text-light" v-bind:href="item.link">
+              <i v-bind:class="'icon ion-' + item.icon + ' px-2'"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-black container-fluid py-1">
+        <div class="container">
+          <small class="text-muted">&copy; 2018 All Rights Reserved</small>
+        </div>
       </div>
     </footer>
   </div>
@@ -43,7 +64,7 @@ export default {
           to: "/",
           label: "Home"
         },
-        "About",
+        "Resume",
         "Services",
         "Projects",
         "Posts",
@@ -51,19 +72,19 @@ export default {
       ],
       accounts: [
         {
-          name: "Github",
+          icon: "social-github",
           link: "https://github.com/yasminzy"
         },
         {
-          name: "Instagram",
+          icon: "social-instagram",
           link: "https://www.instagram.com/yzyusrina/"
         },
         {
-          name: "Twitter",
+          icon: "social-twitter",
           link: "https://twitter.com/yzyusrina"
         },
         {
-          name: "Youtube",
+          icon: "social-youtube",
           link:
             "https://www.youtube.com/channel/UCDmPISxSI9P3VZOjAU5sPZw?view_as=subscriber"
         }
@@ -87,6 +108,11 @@ export default {
   display: none;
 }
 
+::selection {
+  background-color: #6c757d;
+  color: white;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   padding-top: 56px;
@@ -100,17 +126,18 @@ p {
   max-width: 80ch;
 }
 
-img {
-  min-height: 1rem;
-}
-
-.fadeIn {
-  animation-delay: 0.25s;
-  animation-duration: 1.5s;
+.bg-black {
+  background-color: #212529;
 }
 
 .cursive {
   font-family: "Shadows Into Light", cursive;
+  letter-spacing: 0.125rem;
+}
+
+.fadeIn {
+  animation-delay: 0.25s;
+  animation-duration: 1s;
 }
 
 .mh-100 {
