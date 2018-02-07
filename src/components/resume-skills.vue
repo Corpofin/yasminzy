@@ -50,6 +50,7 @@ export default {
         "Responsive web design",
         "UX/UI",
         "SEO",
+        "Linux",
         "Image editing (GIMP)",
         "Video editing (Blender)"
       ]

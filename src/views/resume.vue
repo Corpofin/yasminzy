@@ -1,8 +1,8 @@
 <template>
-<div class="container-fluid py-5">
+<div class="container-fluid py-4">
   <div class="container">
     <h1 class="d-flex align-items-center">Resume
-      <a class="btn btn-light btn-sm ml-3 rounded-0" href="resume.pdf" download="yasminzy-resume.pdf">
+     <a class="btn btn-light btn-sm ml-3 rounded-0" href="resume.pdf" download="yasminzy-resume.pdf">
         <i class="h6 icon ion-ios-download-outline mr-1"></i>
         PDF
       </a>
@@ -12,7 +12,7 @@
 
     <hr class="mb-4">
 
-    <div class="bg-light card">
+    <div class="bg-light card rounded-0">
       <div class="card-body row">
 
         <!-- <resume-header class="col-lg-12" />

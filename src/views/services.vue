@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid py-5">
+<div class="container-fluid py-4">
   <div class="container">
     <h1>Services</h1>
 
@@ -7,10 +7,10 @@
 
     <div class="row">
       <div class="col-md-6 mb-4" v-for="(item, index) in services" v-bind:key="index">
-        <div class="card h-100 rounded-0">
-          <div class="bg-light card-header d-flex justify-content-between" v-bind:id="item.label.toLowerCase()">
+        <div class="border-left-0 border-right-0 border-top-0 card mb-4 h-100">
+          <div class="bg-light card-header d-flex justify-content-between">
             <h3 class=" h5 mb-0">{{ item.label }}</h3>
-            <!-- <i v-bind:class="'h5 icon ion-' + item.icon + ' mb-0'"></i> -->
+            <i v-bind:class="'h5 icon ion-' + item.icon + ' mb-0'"></i>
           </div>
 
           <div class="card-body">
@@ -39,7 +39,7 @@ export default {
     return {
       services: [
         {
-          // icon: "code",
+          icon: "code",
           label: "Development",
           text:
             "I build <i>Single Page Application (SPA)</i> and static website. SPA is faster and feels like an app, but needs to have JavaScript enabled.<br><small>This website is an SPA.</small>",
@@ -50,7 +50,7 @@ export default {
           ]
         },
         {
-          // icon: "settings",
+          icon: "settings",
           label: "Maintenance",
           text:
             "This is an optional monthly service for the websites I developed.",

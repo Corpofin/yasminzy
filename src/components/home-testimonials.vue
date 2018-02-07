@@ -7,7 +7,7 @@
     <div class="carousel slide" id="controls" data-ride="carousel" v-cloak>
       <div class="bg-light carousel-inner mx-auto w-75">
         <div class="carousel-item" v-for="(item, index) in testimonials" v-bind:key="index">
-          <img class="avatar img-responsive my-5 rounded-circle" v-bind:src="'img/testimonials/' + urlize(item.name) + '.jpg'" v-bind:alt="item.name">
+          <img class="avatar img-fluid my-5 rounded-circle" v-bind:src="'img/testimonials/' + urlize(item.name) + '.jpg'" v-bind:alt="item.name">
 
           <blockquote class="blockquote mb-5">
             <p class="font-italic">{{ item.content }}</p>

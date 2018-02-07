@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid py-5">
+<div class="container-fluid py-4">
   <div class="container">
     <h1>Projects</h1>
     <p class="text-muted"></p>

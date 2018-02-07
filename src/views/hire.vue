@@ -1,38 +1,38 @@
 <template>
-<div class="container-fluid py-5">
+<div class="container-fluid py-4">
   <div class="container">
     <h1>Let’s work together</h1>
     <p class="text-muted">Tell me about your project.</p>
 
     <hr class="mb-4">
 
-    <form name="hire" action="/sent" netlify>
+    <form name="hire" action="https://formspree.io/yasmin@yasminzy.com" method="POST">
       <div class="form-group">
         <label for="name">Name*</label>
-        <input class="form-control rounded-0" id="name" type="text" required>
+        <input class="form-control rounded-0" id="name" type="text" name="name" required>
       </div>
 
       <div class="form-group">
         <label for="email">Email*</label>
-        <input class="form-control rounded-0" id="email" type="email" aria-describedby="emailHelp" required>
+        <input class="form-control rounded-0" id="email" type="email" name="_replyto" aria-describedby="emailHelp" required>
         <small class="form-text text-muted" id="emailHelp">I'll never share your email with anyone else.</small>
       </div>
 
       <div class="form-group">
         <label for="website">Website</label>
-        <input class="form-control rounded-0" id="website" type="text">
+        <input class="form-control rounded-0" id="website" type="text" name="website">
       </div>
 
       <div class="form-row">
         <legend class="col-form-label col-sm-12 pt-0">Budget*</legend>
         <div class="form-group col-4 col-sm-2">
-          <select class="form-control rounded-0" id="currency">
+          <select class="form-control rounded-0" id="currency" name="currency">
             <option selected>USD $</option>
             <option>IDR Rp</option>
           </select>
         </div>
         <div class="form-group col-8 col-sm-10">
-          <input class="form-control rounded-0" id="budget" type="number" required>
+          <input class="form-control rounded-0" id="budget" type="number" name="budget" required>
         </div>
       </div>
 
@@ -66,10 +66,12 @@
 
        <div class="form-group">
         <label for="details">Details*</label>
-        <textarea class="form-control rounded-0" id="details" rows="3" required></textarea>
+        <textarea class="form-control rounded-0" id="details" rows="3" name="details" required></textarea>
       </div>
 
       <p class="small text-muted">* Required</p>
+
+      <input type="hidden" name="_next" value="https://www.yasminzy.com/sent" />
 
       <button type="submit" class="btn btn-secondary rounded-0">
         <i class="icon ion-paper-airplane"></i>

@@ -1,8 +1,8 @@
 const projects = [
   {
-    title: "Sample Restaurant",
-    type: "SPA",
-    link: "https://yzy-sample-restaurant.netlify.com"
+    title: "Restaurant Yasmin",
+    type: "Sample",
+    link: "https://restaurant-yasmin.netlify.com"
   }
 ];
 

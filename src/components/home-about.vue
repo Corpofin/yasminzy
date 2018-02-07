@@ -3,7 +3,9 @@
   <div class="container d-flex flex-column justify-content-between mh-100">
     <div class="mb-5 text-center">
       <span class="cursive font-weight-bold text-primary">who i am</span>
-      <h2 class="mb-5">- ABOUT ME -</h2>
+      <h2 class="mb-3">- ABOUT ME -</h2>
+
+      <img class="border img-fluid mb-3 rounded-circle" src="@/assets/yasmin.jpg" alt="">
 
       <p class="text-center mx-auto">I'm a Freelance Web Developer based in Indonesia. I build beautiful Web user interfaces, with a focus on responsive design and performance, using the latest front-end design techniques. If you’re looking for someone who will also care about your project, then you’re in the right place.</p>
 
@@ -101,5 +103,7 @@ export default {
 </script>
 
 <style scoped>
-
+img {
+  max-height: 4rem;
+}
 </style>

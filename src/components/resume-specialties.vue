@@ -7,7 +7,7 @@
   <ul class="list-unstyled d-flex flex-wrap">
     <li class="d-flex flex-column justify-content-center align-items-center hvr-grow mr-2 mb-2" v-for="(item, index) in specialties" v-bind:key="index">
       <div class="border rounded-circle d-flex justify-content-center align-items-center p-3">
-        <img class="img-responsive" v-bind:src="'img/svg/' + item.icon + '.svg'" v-bind:alt="item.label">
+        <img class="img-fluid" v-bind:src="'img/svg/' + item.icon + '.svg'" v-bind:alt="item.label">
       </div>
       <p class="line mb-0 text-muted">|</p>
       <p class="mb-0 small text-muted">{{ item.label }}</p>

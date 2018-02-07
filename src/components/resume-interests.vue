@@ -6,7 +6,7 @@
 
   <ul class="list-unstyled d-flex flex-wrap">
     <li class="border rounded-circle d-flex flex-column hvr-float justify-content-center align-items-center mr-2 mb-2" v-for="(item, index) in interests" v-bind:key="index">
-      <img class="img-responsive mb-2" v-bind:src="'img/svg/' + item.icon + '.svg'" v-bind:alt="item.label">
+      <img class="img-fluid mb-2" v-bind:src="'img/svg/' + item.icon + '.svg'" v-bind:alt="item.label">
       <p class="mb-0 small text-muted">{{ item.label }}</p>
     </li>
   </ul>
