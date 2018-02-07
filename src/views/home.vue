@@ -3,9 +3,9 @@
   <home-header />
   <home-about />
   <home-projects />
-  <home-testimonials />
+  <!-- <home-testimonials />
   <home-posts />
-  <home-logos />
+  <home-logos /> -->
 </div>
 </template>
 

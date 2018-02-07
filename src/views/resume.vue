@@ -2,10 +2,10 @@
 <div class="container-fluid py-4">
   <div class="container">
     <h1 class="d-flex align-items-center">Resume
-     <a class="btn btn-light btn-sm ml-3 rounded-0" href="resume.pdf" download="yasminzy-resume.pdf">
+     <!-- <a class="btn btn-light btn-sm ml-3 rounded-0" href="resume.pdf" download="yasminzy-resume.pdf">
         <i class="h6 icon ion-ios-download-outline mr-1"></i>
         PDF
-      </a>
+      </a> -->
     </h1>
 
     <p class="text-muted"></p>
@@ -31,7 +31,7 @@
           <resume-statement />
           <resume-specialties />
           <resume-skills />
-          <resume-language />
+          <resume-language class="d-none d-sm-block" />
         </div>
 
         <div class="col-lg-6">

@@ -34,7 +34,7 @@ export default {
         "Resume",
         "Services",
         "Projects",
-        "Posts",
+        // "Posts",
         "Contact"
       ]
     };
