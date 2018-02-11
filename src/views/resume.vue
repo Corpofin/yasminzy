@@ -2,17 +2,17 @@
 <div class="container-fluid py-4">
   <div class="container">
     <h1 class="d-flex align-items-center">Resume
-     <!-- <a class="btn btn-light btn-sm ml-3 rounded-0" href="resume.pdf" download="yasminzy-resume.pdf">
+      <a class="btn btn-light btn-sm ml-3" href="resume.pdf" download="yasminzy-resume.pdf">
         <i class="h6 icon ion-ios-download-outline mr-1"></i>
         PDF
-      </a> -->
+      </a>
     </h1>
 
     <p class="text-muted"></p>
 
     <hr class="mb-4">
 
-    <div class="bg-light card rounded-0">
+    <div class="card" data-aos="slide-up">
       <div class="card-body row">
 
         <!-- <resume-header class="col-lg-12" />
@@ -25,16 +25,16 @@
         <resume-language class="col-lg-6" />
         <resume-interests class="col-lg-6" /> -->
 
-        <resume-header class="col-lg-12" />
+        <resume-header class="col-lg-12" data-aos="slide-down" />
 
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="slide-left">
           <resume-statement />
           <resume-specialties />
           <resume-skills />
           <resume-language class="d-none d-sm-block" />
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="slide-right">
           <resume-education  />
           <resume-work />
           <!-- <resume-recognitions /> -->

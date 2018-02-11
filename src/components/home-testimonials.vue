@@ -1,13 +1,15 @@
 <template>
 <div class="container-fluid py-5 text-center">
   <div class="container">
-    <span class="cursive font-weight-bold text-primary">people say</span>
-    <h2 class="mb-5">- TESTIMONIALS -</h2>
+    <div data-aos="fade">
+      <span class="cursive font-weight-bold text-primary">people say</span>
+      <h2 class="mb-5">- TESTIMONIALS -</h2>
+    </div>
 
-    <div class="carousel slide" id="controls" data-ride="carousel" v-cloak>
+    <div class="carousel slide" id="controls" data-ride="carousel" v-cloak data-aos="fade-down-left">
       <div class="bg-light carousel-inner mx-auto w-75">
         <div class="carousel-item" v-for="(item, index) in testimonials" v-bind:key="index">
-          <img class="avatar img-fluid my-5 rounded-circle" v-bind:src="'img/testimonials/' + urlize(item.name) + '.jpg'" v-bind:alt="item.name">
+          <img class="avatar hvr-grow img-fluid my-5 rounded-circle" v-bind:src="'img/testimonials/' + urlize(item.name) + '.jpg'" v-bind:alt="item.name">
 
           <blockquote class="blockquote mb-5">
             <p class="font-italic">{{ item.content }}</p>

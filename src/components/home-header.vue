@@ -1,10 +1,10 @@
 <template>
-<div class="bg-light container-fluid d-flex flex-column justify-content-center mh-100">
-  <div class="animated jackInTheBox container">
+<div class="bg-light container-fluid d-flex flex-column justify-content-center mh-100" id="header">
+  <div class="container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
     <p class="h4"><u>HI</u></p>
 
     <h1 class="display-3">I'M<br>
-      <span class="text-primary">
+      <span class="font-weight-bold text-primary">
         YASMIN<br>ZULFATI<br>YUSRINA
       </span>
     </h1>
@@ -19,16 +19,7 @@ export default {};
 </script>
 
 <style scoped>
-.animated {
-  animation-delay: 0.5s;
-  animation-duration: 2s;
-}
-
 u {
-  text-decoration-color: #007bff;
-}
-
-span {
-  font-weight: bold;
+  text-decoration-color: #e91e63;
 }
 </style>

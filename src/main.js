@@ -1,25 +1,29 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import store from "./store";
-import "./registerServiceWorker";
 
-import "jquery/dist/jquery.slim.min.js";
-import "popper.js/dist/popper.min.js";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "bootstrap/dist/css/bootstrap.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import "jquery/dist/jquery.slim.min";
+import "popper.js/dist/popper.min";
+import "bootstrap/dist/js/bootstrap.min";
+// import "bootstrap/dist/css/bootstrap.css";
+
+import "./custom-bootstrap.css";
+
+import "chart.js";
+import "hchs-vue-charts";
+Vue.use(window.VueCharts);
 
 import "hover.css/css/hover-min.css";
-import "./animate.css";
-
-import "chart.js/dist/Chart.min.js";
-import "./vue-charts";
-Vue.use(VueCharts);
 
 Vue.config.productionTip = false;
 
 new Vue({
   router,
-  store,
+  created() {
+    AOS.init();
+  },
   render: h => h(App)
 }).$mount("#app");

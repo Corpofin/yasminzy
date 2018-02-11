@@ -5,7 +5,7 @@
   <hr>
 
   <p>From June 2012 to August 2016<br>
-    <span class="text-muted">Mechanical Engineering</span><br>
+    <span class="text-primary">Mechanical Engineering</span><br>
     Institut Teknologi Kalimantan, Balikpapan
   </p>
 </section>

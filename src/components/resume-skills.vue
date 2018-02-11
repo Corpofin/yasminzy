@@ -13,7 +13,7 @@
           <span class="col-sm-4 small">{{ item. label }}</span>
           <div class="col-sm-8">
             <div class="progress">
-              <div v-bind:class="'progress-bar bg-secondary w-' + item.value" role="progressbar" v-bind:aria-valuenow="item.value" aria-valuemin="0" aria-valuemax="100"></div>
+              <div v-bind:class="'progress-bar bg-primary w-' + item.value" role="progressbar" v-bind:aria-valuenow="item.value" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
         </li>
@@ -41,15 +41,12 @@ export default {
         { label: "Bootstrap", value: 75 },
         { label: "Sass", value: 50 },
         { label: "Vue.js", value: 75 },
-        { label: "Quasar", value: 75 },
         { label: "Git", value: 50 },
-        { label: "PHP", value: 50 },
-        { label: "Grunt", value: 75 }
+        { label: "PHP", value: 50 }
       ],
       knowledge: [
         "Responsive web design",
         "UX/UI",
-        "SEO",
         "Linux",
         "Image editing (GIMP)",
         "Video editing (Blender)"

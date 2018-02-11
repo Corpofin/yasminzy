@@ -9,8 +9,8 @@
       <div class="border rounded-circle d-flex justify-content-center align-items-center p-3">
         <img class="img-fluid" v-bind:src="'img/svg/' + item.icon + '.svg'" v-bind:alt="item.label">
       </div>
-      <p class="line mb-0 text-muted">|</p>
-      <p class="mb-0 small text-muted">{{ item.label }}</p>
+      <p class="line mb-0 text-primary">|</p>
+      <p class="mb-0 small">{{ item.label }}</p>
     </li>
   </ul>
 </section>
@@ -41,7 +41,7 @@ li {
 }
 
 div {
-  border-color: #6c757d !important;
+  border-color: #e91e63 !important;
 }
 
 img {

@@ -1,8 +1,15 @@
 const projects = [
   {
-    title: "Restaurant Yasmin",
-    type: "Sample",
-    link: "https://restaurant-yasmin.netlify.com"
+    title: "Azka Pastries & Desserts",
+    type: "Sample Restaurant",
+    img: "restaurant-azka.png",
+    link: "https://restaurant-Azka.netlify.com"
+  },
+  {
+    title: "Tiara's British Specialities",
+    type: "Sample Restaurant",
+    img: "restaurant-tiara.jpg",
+    link: "https://restaurant-tiara.netlify.com"
   }
 ];
 

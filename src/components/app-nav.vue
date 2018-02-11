@@ -1,5 +1,5 @@
 <template>
-<nav class="animated fadeInDown bg-light fixed-top navbar navbar-expand-lg navbar-light">
+<nav class="navbar fixed-top navbar-expand-md navbar-light w-100" data-aos="fade-down" data-aos-duration="800">
   <router-link class="navbar-brand" to="/">
     <img class="d-inline-block align-top" src="@/assets/logo.png" alt="Logo" width="30" height="30" />
     <span class="cursive">Yasmin ZY</span>
@@ -52,5 +52,7 @@ export default {
 </script>
 
 <style scoped>
-
+nav {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+}
 </style>

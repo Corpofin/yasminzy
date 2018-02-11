@@ -1,9 +1,9 @@
 <template>
-  <div class="d-flex flex-column mh-100">
-    <app-nav />
-    <router-view class="animated fadeIn" />
-    <app-footer />
-  </div>
+<div class="d-flex flex-column mh-100">
+  <app-nav />
+  <router-view data-aos="fade" />
+  <app-footer />
+</div>
 </template>
 
 <script>
@@ -24,17 +24,15 @@ export default {
 }
 
 ::selection {
-  background-color: #6c757d;
+  background-color: #e91e63;
   color: white;
 }
 
 body {
+  /* background-color: #f5f5f5; */
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
   padding-top: 56px;
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 p {
@@ -46,12 +44,13 @@ p {
   letter-spacing: 0.125rem;
 }
 
-.fadeIn {
-  animation-delay: 0.25s;
-  animation-duration: 1s;
+.img-wrapper {
+  display: inline-block;
+  overflow: hidden;
 }
 
 .mh-100 {
+  /* min-height: 100vh; */
   min-height: calc(100vh - 56px);
 }
 </style>

@@ -6,28 +6,28 @@
 
     <hr class="mb-4">
 
-    <form name="contact-yasminzy" action="https://formspree.io/yasmin@yasminzy.com" method="POST">
+    <form name="contact-yasminzy" action="https://formspree.io/yasmin@yasminzy.com" method="POST" data-aos="zoom-out-up">
       <div class="form-group">
         <label for="name">Name*</label>
-        <input class="form-control rounded-0" id="name" type="text" name="name" required>
+        <input class="form-control" id="name" type="text" name="name" required>
       </div>
 
       <div class="form-group">
         <label for="email">Email*</label>
-        <input class="form-control rounded-0" id="email" type="email" name="_replyto" aria-describedby="emailHelp" required>
+        <input class="form-control" id="email" type="email" name="_replyto" aria-describedby="emailHelp" required>
         <small class="form-text text-muted" id="emailHelp">I'll never share your email with anyone else.</small>
       </div>
 
        <div class="form-group">
         <label for="message">Message*</label>
-        <textarea class="form-control rounded-0" id="message" rows="3" name="message" required></textarea>
+        <textarea class="form-control" id="message" rows="3" name="message" required></textarea>
       </div>
 
       <p class="small text-muted">* Required</p>
 
       <input type="hidden" name="_next" value="https://www.yasminzy.com/sent" />
 
-      <button type="submit" class="btn btn-secondary rounded-0">
+      <button type="submit" class="btn btn-primary">
         <i class="icon ion-paper-airplane"></i>
         SEND
       </button>

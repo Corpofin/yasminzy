@@ -7,10 +7,10 @@
 
     <div class="row">
       <div class="col-md-6 mb-4" v-for="(item, index) in services" v-bind:key="index">
-        <div class="border-left-0 border-right-0 border-top-0 card mb-4 h-100">
-          <div class="bg-light card-header d-flex justify-content-between">
+        <div class="card mb-4 h-100" data-aos="zoom-in">
+          <div class="bg-white card-header d-flex justify-content-between">
             <h3 class=" h5 mb-0">{{ item.label }}</h3>
-            <i v-bind:class="'h5 icon ion-' + item.icon + ' mb-0'"></i>
+            <i v-bind:class="'h5 icon ion-' + item.icon + ' mb-0 text-primary'"></i>
           </div>
 
           <div class="card-body">
@@ -26,8 +26,8 @@
       </div>
     </div>
 
-    <p class="text-center mx-auto">
-      <router-link class="btn btn-secondary btn-lg rounded-0 mx-auto" to="hire">HIRE ME</router-link>
+    <p class="text-center mx-auto" data-aos="zoom-out">
+      <router-link class="btn btn-primary btn-lgmx-auto" to="hire">HIRE ME</router-link>
     </p>
   </div>
 </div>

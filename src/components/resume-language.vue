@@ -20,7 +20,7 @@ export default {
         labels: ["Indonesian"],
         datasets: [
           {
-            backgroundColor: ["#6c757d"],
+            backgroundColor: ["#e91e63"],
             data: [100]
           }
         ],
@@ -36,7 +36,7 @@ export default {
         labels: ["English"],
         datasets: [
           {
-            backgroundColor: ["#6c757d", "#e9ecef"],
+            backgroundColor: ["#e91e63", "#e9ecef"],
             data: [80, 20]
           }
         ],

@@ -9,10 +9,12 @@
     <div class="row text-center">
       <div class="col-md-6 col-lg-4" v-for="(item, index) in projects" v-bind:key="index">
         <div class="border-0 card hvr-shadow mb-4 w-100">
-          <a class="text-muted" v-bind:href="item.link">
-            <img class="card-img-top" v-bind:src="'img/projects/' + urlize(item.title) + '.jpg'" v-bind:alt="item.title">
+          <a v-bind:href="item.link">
+            <div class="img-wrapper" data-aos="zoom-in-up">
+              <img class="card-img-top hvr-grow" v-bind:src="'img/projects/' + item.img" v-bind:alt="item.title">
+            </div>
 
-            <div class="card-body">
+            <div class="card-body" data-aos="zoom-in-down">
               <small class="text-muted">{{ item.type }}</small>
               <h5 class="card-title">{{ item.title }}</h5>
             </div>
@@ -25,7 +27,6 @@
 </template>
 
 <script>
-import { urlize } from "@/functions";
 import { projects } from "@/data";
 
 export default {
@@ -33,9 +34,6 @@ export default {
     return {
       projects
     };
-  },
-  methods: {
-    urlize
   }
 };
 </script>

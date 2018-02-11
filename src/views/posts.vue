@@ -9,9 +9,11 @@
     <div class="col-md-6 px-lg-5" v-for="(item, index) in posts" v-bind:key="index">
       <div class="border-left-0 border-right-0 border-top-0 card hvr-shadow mb-4 w-100">
         <router-link v-bind:to="'posts/' + urlize(item.title)">
-          <img class="card-img-top" v-bind:src="'img/posts/' + urlize(item.title) + '.jpg'" v-bind:alt="item.title">
+          <div class="img-wrapper" data-aos="zoom-in-left">
+            <img class="card-img-top hvr-grow" v-bind:src="'img/posts/' + urlize(item.title) + '.jpg'" v-bind:alt="item.title">
+          </div>
 
-          <div class="card-body d-flex flex-column text-left">
+          <div class="card-body d-flex flex-column text-left" data-aos="zoom-in-right">
             <small>
               {{ item.date }} / {{ item.tag }}
             </small>

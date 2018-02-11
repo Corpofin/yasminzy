@@ -31,5 +31,8 @@ export default new Router({
         { path: ":title", component: PostItem }
       ]
     }
-  ]
+  ],
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  }
 });
