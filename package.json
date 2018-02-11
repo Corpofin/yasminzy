@@ -11,7 +11,7 @@
     "aos": "^2.2.0",
     "bootstrap": "^4.0.0",
     "chart.js": "^2.7.1",
-    "hchs-vue-charts": "^1.2.31",
+    "hchs-vue-charts": "^1.2.8",
     "hover.css": "^2.2.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.13.0",
@@ -30,12 +30,22 @@
     "vue-prism-component": "^1.0.1",
     "vue-template-compiler": "^2.5.13"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": ["vue-cli-service lint", "git add"],
-    "*.vue": ["vue-cli-service lint", "git add"]
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   }
 }
