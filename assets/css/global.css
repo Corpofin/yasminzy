@@ -1,0 +1,86 @@
+[v-cloak] {
+  display: none;
+}
+
+::selection {
+  background-color: #e91e63;
+  color: white;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  padding-top: 56px;
+}
+
+p {
+  max-width: 80ch;
+}
+
+article {
+  max-width: 80ch;
+}
+
+article img {
+  display: block;
+  margin: 0.5rem auto;
+}
+
+article h2,
+article > footer {
+  margin-top: 3rem;
+}
+
+.cursive {
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 0.125rem;
+}
+
+.img-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.mh-100 {
+  min-height: calc(100vh - 56px);
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
