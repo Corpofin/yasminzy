@@ -28,7 +28,7 @@
     <div data-aos="zoom-in-right">
       <h3 data-aos="fade">Send me message</h3>
 
-      <form action="https://formspree.io/yasmin@yasminzy.com" method="POST" data-aos="fade">
+      <form action="https://formspree.io/yzyusrina@gmail.com" method="POST" data-aos="fade">
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="_replyto" placeholder="Email" required>
         <textarea name="message" placeholder="Message" required></textarea>
