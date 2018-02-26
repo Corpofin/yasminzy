@@ -1,5 +1,5 @@
 <template>
-<div class="content-wrapper">
+<div class="content-wrapper" data-aos="fade">
   <h1>Thank You</h1>
 
   <p>I'll get back to you ASAP 😊</p>
@@ -20,6 +20,10 @@ export default {};
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+}
+
+h1 {
+  font-size: 5rem;
 }
 
 p {
