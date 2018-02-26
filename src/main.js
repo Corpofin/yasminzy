@@ -7,6 +7,11 @@ import "normalize.css/normalize.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import VueAnalytics from "vue-analytics";
+Vue.use(VueAnalytics, {
+  id: "UA-90535731-3"
+});
+
 Vue.config.productionTip = false;
 
 new Vue({
