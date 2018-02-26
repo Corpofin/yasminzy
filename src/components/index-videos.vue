@@ -1,27 +1,25 @@
 <template>
 <div class="wrapper">
   <div class="content-wrapper">
-    <h2 data-aos="fade">Latest updates</h2>
+    <h2 data-aos="fade">Latest Updates</h2>
 
     <div class="videos">
       <div data-aos="zoom-in-up">
-        <!-- <video src=""></video> -->
         <iframe src="https://www.youtube-nocookie.com/embed/7pIpukw2qs4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
 
       <div data-aos="zoom-in-down">
-        <h3>PostCSS in Vue Project Demo</h3>
-        <p>Build a wallpaper gallery page with Vue and cssnext plugin.</p>
+        <h3>Using PostCSS in a Vue Project</h3>
+        <p>A wallpaper gallery demo using Vue and cssnext.</p>
       </div>
 
       <div data-aos="zoom-in-up">
-        <!-- <video src=""></video> -->
         <iframe src="https://www.youtube-nocookie.com/embed/yVRN9Vg9gtU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
 
       <div data-aos="zoom-in-down">
         <h3>Fixing Error when Starting Nuxt</h3>
-        <p>I got an EADDRNOTAVAIL error when I start the dev script after fresh install.</p>
+        <p>EADDRNOTAVAIL error when running the dev script after fresh install.</p>
       </div>
     </div>
   </div>

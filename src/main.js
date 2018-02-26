@@ -7,14 +7,14 @@ import "normalize.css/normalize.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import "hover.css/css/hover-min.css";
-
 Vue.config.productionTip = false;
 
 new Vue({
   router,
   created() {
-    AOS.init();
+    AOS.init({
+      disable: "phone"
+    });
   },
   render: h => h(App)
 }).$mount("#app");

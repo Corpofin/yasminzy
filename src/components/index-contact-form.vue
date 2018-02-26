@@ -1,17 +1,17 @@
 <template>
 <div class="content-wrapper" id="contact">
-  <h2 data-aos="fade">Get in touch</h2>
+  <h2 data-aos="fade">Get in Touch</h2>
 
   <div class="contact">
     <div data-aos="zoom-in-left">
       <h3 data-aos="fade">How to find me</h3>
 
       <ul>
-        <li data-aos="fade">Chat me
+        <li data-aos="fade">Chat
           <p><a href="https://tawk.to/chat/5a8d0fc1d7591465c707dc13/default/?$_tawk_popout=true">Tawk.to</a></p>
         </li>
 
-        <li data-aos="fade">Email me
+        <li data-aos="fade">Email
           <p><a href="mailto:yasmin@yasminzy.com">yasmin@yasminzy.com</a></p>
         </li>
 
@@ -20,7 +20,7 @@
         </li>
 
         <li data-aos="fade">Hours
-          <p>Mon to Fri 6AM to 6PM</p>
+          <p>Mon to Sat 6AM to 6PM UTC+8</p>
         </li>
       </ul>
     </div>
