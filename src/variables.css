@@ -1,5 +1,5 @@
 :root {
-  /*  */
+  /* Material color */
   --red: #f44336;
   --pink: #e91e63;
   --purple: #9c27b0;
@@ -22,7 +22,8 @@
   --blue-grey: #607d8b;
   --black: #212121;
   --white: #ffffff;
-  /*  */
+
+  /* Project */
   --primary: var(--indigo);
   --secondary: var(--pink);
   --radius: var(--space);
@@ -31,6 +32,7 @@
   --btn-padding: calc(var(--space) / 3) calc(var(--space));
 }
 
+/* Breakpoints */
 @custom-media --sm (min-width: 576px);
 @custom-media --md (min-width: 786px);
 @custom-media --lg (min-width: 992px);

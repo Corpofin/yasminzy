@@ -29,9 +29,9 @@
       <h3 data-aos="fade">Send me message</h3>
 
       <form action="https://formspree.io/yasmin@yasminzy.com" method="POST" data-aos="fade">
-        <input type="text" name="name" placeholder="Name">
-        <input type="email" name="_replyto" placeholder="Email">
-        <textarea name="message" placeholder="Message"></textarea>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="_replyto" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
 
         <input type="hidden" name="_next" value="https://www.yasminzy.com/thanks" />
 
@@ -53,7 +53,8 @@ h2 {
   text-align: center;
 }
 
-h3, li {
+h3,
+li {
   text-align: center;
 
   @media (--lg) {

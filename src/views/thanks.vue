@@ -1,8 +1,8 @@
 <template>
-<div class="wrapper">
-  <div class="content-wrapper">
+<div class="content-wrapper">
+  <h1>Thank You</h1>
 
-  </div>
+  <p>I'll get back to you ASAP 😊</p>
 </div>
 </template>
 
@@ -13,16 +13,16 @@ export default {};
 <style lang="postcss" scoped>
 @import "../variables.css";
 
-.wrapper {
-  background-color: var(--primary);
-  min-height: 100vh;
-}
-
 .content-wrapper {
+  align-items: center;
+  color: var(--primary);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 2.5rem;
 }
 </style>
