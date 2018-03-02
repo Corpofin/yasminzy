@@ -22,6 +22,10 @@ export default {
     return {
       social: [
         {
+          icon: "social-codepen",
+          link: "https://codepen.io/yasminzy"
+        },
+        {
           icon: "social-github",
           link: "https://github.com/yasminzy"
         },
@@ -69,7 +73,7 @@ p {
 
 h3 {
   @media (--sm) {
-    text-align: left;    
+    text-align: left;
   }
 }
 

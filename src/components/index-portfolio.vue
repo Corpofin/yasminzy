@@ -33,21 +33,28 @@ export default {
           img: "toko-diba.jpg",
           link: "https://www.tokodiba.com",
           description:
-            "Website for a business providing various products and services. Tawk.to ready."
+            "Website for a business with Tawk.to messaging. Built with Nuxt and Bootstrap."
+        },
+        {
+          title: "Enlightenment News",
+          img: "enlightenment-news-sample.png",
+          link: "https://soedja-challenge.netlify.com",
+          description:
+            "Sample news website. Built with Nuxt and Guardian's API."
         },
         {
           title: "Azka Bakery",
           img: "azka-bakery-sample.png",
           link: "https://bakery-azka.netlify.com",
           description:
-            "Sample ecommerce website built with Nuxt, Snipcart, and Bootstrap."
+            "Sample ecommerce website. Built with Nuxt, Snipcart, and Bootstrap."
         },
         {
           title: "Tiara Restaurant",
           img: "tiara-restaurant-sample.jpg",
           link: "https://restaurant-tiara.netlify.com",
           description:
-            "Sample restaurant SPA built with Vue and Bootstrap. Reservation system ready."
+            "Sample restaurant SPA with booking system. Built with Vue and Bootstrap."
         }
       ]
     };

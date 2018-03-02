@@ -23,19 +23,19 @@ export default {
           icon: "university",
           heading: "Education",
           text:
-            "I am a Mechanical Engineering cumlaude graduate from ITK Balikpapan, ID."
+            "I am a Mechanical Engineering graduate from ITK Balikpapan, Indonesia."
         },
         {
           icon: "briefcase",
           heading: "Work",
           text:
-            "I do freelance web development work. I am now looking for a full time developer job."
+            "I do freelance work. I am now looking for a full time developer job."
         },
         {
           icon: "code",
           heading: "Knowledge",
           text:
-            "HTML5, CSS3, JavaScript, Vue/Nuxt.js, Bootstrap, Sass, PostCSS, Git, and Linux."
+            "HTML5, CSS3, JavaScript, Vue/Nuxt.js, Bootstrap, Sass, PostCSS, and Git."
         }
       ]
     };
