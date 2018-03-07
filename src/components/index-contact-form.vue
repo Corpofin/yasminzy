@@ -30,10 +30,11 @@
 
       <form action="https://formspree.io/yasmin@yasminzy.com" method="POST" data-aos="fade">
         <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="_replyto" placeholder="Email" required>
+        <input type="text" name="_replyto" placeholder="Email" required>
         <textarea name="message" placeholder="Message" required></textarea>
 
-        <input type="hidden" name="_next" value="https://www.yasminzy.com/thanks" />
+        <input type="hidden" name="_subject" value="Yasminzy contact"/>
+        <input type="hidden" name="_next" value="https://www.yasminzy.com/thanks"/>
 
         <button class="btn btn-secondary" type="submit" data-aos="fade">SEND MESSAGE</button>
       </form>
