@@ -5,23 +5,25 @@
 
     <div class="videos">
       <div data-aos="zoom-in-up">
-        <iframe src="https://www.youtube-nocookie.com/embed/7pIpukw2qs4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/0mCGX0ENnRQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
 
       <div data-aos="zoom-in-down">
-        <h3>Using PostCSS in a Vue Project</h3>
-        <p>A wallpaper gallery demo using Vue and cssnext.</p>
+        <h3>How to use Vuex</h3>
+        <p>Wikipedia Viewer demo with Axios.</p>
       </div>
 
       <div data-aos="zoom-in-up">
-        <iframe src="https://www.youtube-nocookie.com/embed/yVRN9Vg9gtU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/A5-MuxdaWsk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
 
       <div data-aos="zoom-in-down">
-        <h3>Fixing Error when Starting Nuxt</h3>
-        <p>EADDRNOTAVAIL error when running the dev script after fresh install.</p>
+        <h3>How to use Vuex</h3>
+        <p>URL Shortener demo with Async Await.</p>
       </div>
     </div>
+
+    <p><a class="btn btn-primary" href="https://www.youtube.com/c/YasminZulfatiYusrina">SEE ALL</a></p>
   </div>
 </div>
 </template>
@@ -37,7 +39,14 @@ export default {};
   background-color: var(--grey-100);
 }
 
-h2, h3, p {
+.content-wrapper > p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2,
+h3,
+p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -53,6 +62,7 @@ h2, h3, p {
   display: grid;
   grid-gap: calc(var(--space) * 2);
   list-style-type: none;
+  margin-bottom: calc(var(--space) * 2);
   padding-left: 0;
 
   @media (--md) {
