@@ -2,7 +2,7 @@
 <div class="wrapper">
   <div class="content-wrapper">
     <div>
-      <h2 data-aos="fade">0 + happy clients</h2>
+      <h2 data-aos="fade">1 happy client</h2>
 
       <p data-aos="slide-down"><strong>Lorem ipsum dolor sit amet consectetur.</strong></p>
 
@@ -10,7 +10,7 @@
         <p data-aos="slide-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, corporis. Expedita numquam minus enim placeat reprehenderit, nulla magnam fugit, similique facere voluptatum accusantium illum, animi repudiandae assumenda itaque! Sunt, delectus!</p>
 
         <footer class="blockquote-footer" data-aos="slide-right">
-          <cite>Source Title</cite>  / Lorem, ipsum.
+          <cite>Source Title</cite> / Lorem, ipsum.
         </footer>
       </blockquote>
     </div>

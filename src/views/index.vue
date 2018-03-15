@@ -5,10 +5,10 @@
   <index-portfolio />
   <index-services />
   <index-contact-simple />
-  <!-- <index-stat /> -->
+  <!-- <index-stat />
   <index-photo />
-  <!-- <index-testimonials /> -->
-  <!-- <index-logos /> -->
+  <index-testimonials /> -->
+  <index-logos />
   <index-videos />
   <index-contact-form />
   <index-footer />
@@ -48,5 +48,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

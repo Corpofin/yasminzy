@@ -39,7 +39,8 @@ export default {};
   }
 }
 
-h2, p {
+h2,
+p {
   text-align: center;
 
   @media (--lg) {

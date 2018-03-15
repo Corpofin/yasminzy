@@ -1,7 +1,7 @@
 <template>
 <div class="wrapper" id="portfolio">
   <div class="content-wrapper">
-    <h2 data-aos="fade">Best Work</h2>
+    <h2 data-aos="fade">Latest Work</h2>
 
     <ul>
       <li v-for="(item, index) in portfolio" v-bind:key="index">
@@ -28,6 +28,13 @@ export default {
   data() {
     return {
       portfolio: [
+        {
+          title: "TechIQ",
+          img: "techiq.jpg",
+          link: "http://techiq.io",
+          description:
+            "Company profile website for a software services firm. Built with Nuxt and Bootstrap."
+        },
         {
           title: "Toko Diba",
           img: "toko-diba.jpg",
@@ -69,7 +76,8 @@ export default {
   background-color: var(--grey-100);
 }
 
-h2, .text {
+h2,
+.text {
   text-align: center;
 }
 

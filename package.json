@@ -12,7 +12,7 @@
     "normalize.css": "^8.0.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^11.1.0",
-    "vue": "^2.5.13",
+    "vue": "^2.5.16",
     "vue-analytics": "^5.9.1",
     "vue-router": "^3.0.1"
   },
@@ -22,7 +22,7 @@
     "@vue/cli-service": "^3.0.0-beta.6",
     "@vue/eslint-config-prettier": "^3.0.0-beta.6",
     "lint-staged": "^6.0.0",
-    "vue-template-compiler": "^2.5.13"
+    "vue-template-compiler": "^2.5.16"
   },
   "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
   "gitHooks": {

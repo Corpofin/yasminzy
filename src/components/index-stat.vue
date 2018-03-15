@@ -23,9 +23,14 @@ export default {
     return {
       stat: [
         {
-          icon: "document",
+          icon: "bag",
           total: 0,
-          label: "Lorem ipsum"
+          label: "Online store built"
+        },
+        {
+          icon: "laptop",
+          total: 1,
+          label: "Website built"
         },
         {
           icon: "document",
@@ -33,14 +38,9 @@ export default {
           label: "Lorem ipsum"
         },
         {
-          icon: "document",
-          total: 0,
-          label: "Lorem ipsum"
-        },
-        {
-          icon: "document",
-          total: 0,
-          label: "Lorem ipsum"
+          icon: "happy",
+          total: 1,
+          label: "Happy client"
         }
       ]
     };

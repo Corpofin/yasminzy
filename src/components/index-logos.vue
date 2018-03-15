@@ -2,7 +2,7 @@
 <div class="content-wrapper">
   <ul>
     <li v-for="(item, index) in logos" v-bind:key="index" data-aos="zoom-in">
-      <img v-bind:src="'/img/' + item.img + '.jpg'" v-bind:alt="item.name">
+      <img v-bind:src="'/img/' + item.img + '.png'" v-bind:alt="item.name">
       <p>{{ item.name }}</p>
     </li>
   </ul>
@@ -15,37 +15,37 @@ export default {
     return {
       logos: [
         {
-          img: "document",
-          name: "Lorem Ipsum"
-        },
-        {
-          img: "document",
-          name: "Lorem Ipsum"
-        },
-        {
-          img: "document",
-          name: "Lorem Ipsum"
-        },
-        {
-          img: "document",
-          name: "Lorem Ipsum"
-        },
-        {
-          img: "document",
-          name: "Lorem Ipsum"
-        },
-        {
-          img: "document",
-          name: "Lorem Ipsum"
-        },
-        {
-          img: "document",
-          name: "Lorem Ipsum"
-        },
-        {
-          img: "document",
-          name: "Lorem Ipsum"
+          img: "techiq",
+          name: "TechIQ"
         }
+        // {
+        //   img: "document",
+        //   name: "Lorem Ipsum"
+        // },
+        // {
+        //   img: "document",
+        //   name: "Lorem Ipsum"
+        // },
+        // {
+        //   img: "document",
+        //   name: "Lorem Ipsum"
+        // },
+        // {
+        //   img: "document",
+        //   name: "Lorem Ipsum"
+        // },
+        // {
+        //   img: "document",
+        //   name: "Lorem Ipsum"
+        // },
+        // {
+        //   img: "document",
+        //   name: "Lorem Ipsum"
+        // },
+        // {
+        //   img: "document",
+        //   name: "Lorem Ipsum"
+        // }
       ]
     };
   }
@@ -76,6 +76,12 @@ li {
   display: grid;
   grid-gap: calc(var(--space) / 2);
   text-align: center;
+}
+
+img {
+  filter: grayscale(1);
+  margin: 0 auto;
+  max-height: 3rem;
 }
 
 p {
