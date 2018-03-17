@@ -2,7 +2,7 @@
 <div class="content-wrapper">
   <ul>
     <li v-for="(item, index) in logos" v-bind:key="index" data-aos="zoom-in">
-      <img v-bind:src="'/img/' + item.img + '.png'" v-bind:alt="item.name">
+      <img v-lazy="'/img/' + item.img + '.png'" v-bind:alt="item.name">
       <p>{{ item.name }}</p>
     </li>
   </ul>
@@ -17,11 +17,11 @@ export default {
         {
           img: "techiq",
           name: "TechIQ"
+        },
+        {
+          img: "toko-diba",
+          name: "Toko Diba"
         }
-        // {
-        //   img: "document",
-        //   name: "Lorem Ipsum"
-        // },
         // {
         //   img: "document",
         //   name: "Lorem Ipsum"

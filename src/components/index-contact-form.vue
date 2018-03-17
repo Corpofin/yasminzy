@@ -75,7 +75,7 @@ li {
     padding: var(--space);
 
     &:nth-child(1) {
-      background-color: var(--pink);
+      background-color: var(--secondary);
     }
 
     &:nth-child(2) {
@@ -124,7 +124,7 @@ textarea {
   margin-bottom: var(--space);
 
   &:focus {
-    border-color: var(--grey);
+    border-color: var(--grey-500);
     outline: 0;
   }
 }

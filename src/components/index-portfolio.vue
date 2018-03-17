@@ -7,7 +7,7 @@
       <li v-for="(item, index) in portfolio" v-bind:key="index">
         <div class="img-wrapper" data-aos="fade-left">
           <a v-bind:href="item.link">
-            <img class="hvr hvr-grow" v-bind:src="'/img/' + item.img" v-bind:alt="item.title">
+            <img class="hvr hvr-grow" v-lazy="'/img/' + item.img" v-bind:alt="item.title">
           </a>
         </div>
 
@@ -19,52 +19,18 @@
         </div>
       </li>
     </ul>
+
+    <p class="center"><router-link class="btn btn-primary" to="/projects">SEE ALL</router-link></p>
   </div>
 </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      portfolio: [
-        {
-          title: "TechIQ",
-          img: "techiq.jpg",
-          link: "http://techiq.io",
-          description:
-            "Company profile website for a software services firm. Built with Nuxt and Bootstrap."
-        },
-        {
-          title: "Toko Diba",
-          img: "toko-diba.jpg",
-          link: "https://www.tokodiba.com",
-          description:
-            "Website for a business with Tawk.to messaging. Built with Nuxt and Bootstrap."
-        },
-        {
-          title: "Enlightenment News",
-          img: "enlightenment-news-sample.png",
-          link: "https://soedja-challenge.netlify.com",
-          description:
-            "Sample news website. Built with Nuxt and Guardian's API."
-        },
-        {
-          title: "Azka Bakery",
-          img: "azka-bakery-sample.png",
-          link: "https://bakery-azka.netlify.com",
-          description:
-            "Sample ecommerce website. Built with Nuxt, Snipcart, and Bootstrap."
-        },
-        {
-          title: "Tiara Restaurant",
-          img: "tiara-restaurant-sample.jpg",
-          link: "https://restaurant-tiara.netlify.com",
-          description:
-            "Sample restaurant SPA with booking system. Built with Vue and Bootstrap."
-        }
-      ]
-    };
+  computed: {
+    portfolio() {
+      return this.$store.getters.portfolio;
+    }
   }
 };
 </script>
@@ -86,12 +52,40 @@ ul {
   grid-gap: calc(var(--space) * 2);
   list-style-type: none;
   padding-left: 0;
-  margin-top: calc(var(--space) * 2);
+  margin: calc(var(--space) * 2) 0;
 }
 
 li {
   display: grid;
   grid-gap: calc(var(--space) * 2);
+
+  & a {
+    color: var(--black);
+  }
+
+  & img {
+    display: block;
+    box-shadow: var(--shadow);
+    margin: 0 auto;
+    max-height: 300px;
+  }
+
+  & .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  & h3 {
+    font-size: 2.5rem;
+  }
+
+  & p {
+    color: var(--grey);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40ch;
+  }
 
   @media (--md) {
     grid-template-columns: repeat(2, 1fr);
@@ -129,31 +123,9 @@ li {
   }
 }
 
-a {
-  color: var(--black);
-}
-
-img {
-  display: block;
-  box-shadow: var(--shadow);
-  margin: 0 auto;
-  max-height: 300px;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-h3 {
-  font-size: 2.5rem;
-}
-
-p {
-  color: var(--grey);
+.center {
   margin-left: auto;
   margin-right: auto;
-  max-width: 40ch;
+  text-align: center;
 }
 </style>
